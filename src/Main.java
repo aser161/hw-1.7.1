@@ -81,7 +81,7 @@ public class Main {
             System.out.println(year1);
         }
 
-        // Задание 3.2
+          // Задание 3.2
         System.out.println("Задание 3.2");
         int x = 0;
         for (int i1 = 1; i1 <= 10; i1++){
