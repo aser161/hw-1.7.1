@@ -3,11 +3,11 @@ public class Main {
 
         // Задание 1
         System.out.println("Задание 1");
-        int salary = 15000;
+        int investment = 15000;
         int total = 0;
         int month = 0;
         while (total <= 2_459_000){
-            total += salary;
+            total += investment;
             month++;
         }
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
@@ -28,15 +28,15 @@ public class Main {
 
         // Задание 3
         System.out.println("Задание 3");
-        int y = 12_000_000;
-        int born = 17;
-        int die = 8;
+        int populationY = 12_000_000;
+        int bornY = 17;
+        int dieY = 8;
         int totalNaturalIncrease = 0;
 
         for (int year = 1; year <=10;year++) {
-            y += totalNaturalIncrease;
-            totalNaturalIncrease = (y / 1000) * (born - die);
-            System.out.println("Год " + year + ", численность населения составляет " + y);
+            populationY += totalNaturalIncrease;
+            totalNaturalIncrease = (populationY / 1000) * (bornY - dieY);
+            System.out.println("Год " + year + ", численность населения составляет " + populationY);
         }
 
         // Задание 2.1
@@ -76,12 +76,17 @@ public class Main {
 
         // Задание 3.1
         System.out.println("Задание 3.1");
-        int year1 = 1896;
-        for (; year1 <= 2100; year1 += 79){
-            System.out.println(year1);
+        int year1 = 0;
+        int yearNow = 2022;
+        int year200ago = yearNow - 200;
+        int year100later = yearNow + 100;
+        for (; year1 <= year100later; year1 += 79){
+            if (year1 > year200ago && year1 < year100later) {
+                System.out.println(year1);
+            }
         }
 
-        // Задание 3.2
+          // Задание 3.2
         System.out.println("Задание 3.2");
         int x = 0;
         for (int i1 = 1; i1 <= 10; i1++){
